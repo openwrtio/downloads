@@ -33,8 +33,10 @@ done
 sed -i '/-|-/a[../](../) |  | ' index.md
 # sudo apt-get install discount
 markdown index.md > index.html.part
-body=`cat index.html.part | tr '\n' '\f'`
-echo $body
+
+# sed不支持多行文本，所以要先把换行符去掉
+tmp=`cat index.html.part | tr '\n' '\f'`
+body=`echo $tmp | sed -e "s|<table>|<table class=\"pure-table pure-table-striped pure-table-horizontal\">|g"`
 
 path=`pwd | sed -e "s|$top_path||"`
 sed -e "s|{title}|Index of $path|g" -e "s|{body}|$body|g" ../tpl.html | tr '\f' '\n' > index.html
