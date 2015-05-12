@@ -5,7 +5,7 @@ before_install:
 install:
 - bash ./ci.sh
 after_success:
-- test $TRAVIS_PULL_REQUEST == "false" && echo "travis-ci don't support qiniu, so deploy manually" || exit
+- test $TRAVIS_PULL_REQUEST == "false" && echo "travis-ci don't support qiniu, so deploy manually" || exit 0
 - wget -O /tmp/qiniu-devtools-linux_amd64-current.tar.gz http://devtools.qiniu.io/qiniu-devtools-linux_amd64-current.tar.gz
 - mkdir qiniu
 - tar -zxvf /tmp/qiniu-devtools-linux_amd64-current.tar.gz -C ./qiniu/
