@@ -1,0 +1,18 @@
+language: bash
+before_install:
+- sudo apt-get update -qq
+- sudo apt-get install -y discount
+install:
+- bash ./ci.sh
+after_success:
+- test $TRAVIS_PULL_REQUEST == "false" && echo "travis-ci don't support qiniu, so deploy manually" || exit 0
+- wget -O /tmp/qiniu-devtools-linux_amd64-current.tar.gz http://devtools.qiniu.io/qiniu-devtools-linux_amd64-current.tar.gz
+- mkdir qiniu
+- tar -zxvf /tmp/qiniu-devtools-linux_amd64-current.tar.gz -C ./qiniu/
+- export PATH=$PATH:$PWD/qiniu/
+- qrsctl login $qiniu_user $qiniu_passwd
+- qrsctl put downloads-openwrt-io "dl/" dl/index.html
+- rm -f dl/*.tmp dl/*.html dl/*.md dl/*.dl
+- sed -e "s|{src}|$PWD/dl|g" -e "s|{access_key}|$qiniu_access_key|g" -e "s|{secret_key}|$qiniu_secret_key|g" qiniu.json > qiniu.json
+- qrsync-v2 qiniu.json
+- qrsctl cdn/refresh downloads-openwrt-io http://downloads.openwrt.io/dl/
