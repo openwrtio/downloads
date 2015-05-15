@@ -61,8 +61,12 @@ for dir in $dirs; do
     rm *.tmp
     path=`pwd | sed -e "s|$top_path||"`
     sed -e "s|{title}|Index of $path/|g" -e "s|{body}|$body|g" $top_path/tpl.html | tr '\f' '\n' > index.html
-    # 首页有标题，不需要这个标题
-    sed -i '/<h1>Index of \/<\/h1>/d' index.html
+    if [ $dir = $top_path':' ]; then
+        # 首页有标题，不需要这个标题
+        sed -i '/<h1>Index of \/<\/h1>/d' index.html
+        title=`grep '<h1>' index.html | sed -e 's|h1|title|g'`
+        sed -i "s|<title>Index of /</title>|$title|g" index.html
+    fi
     qiniu_prefix=${path:1}"/"
     if [ $qiniu_prefix = "/" ]; then
         qiniu_prefix=""
