@@ -6,8 +6,13 @@
 
 ### 极路由
 
-* ralink opkg源（极1s、极2、极3）： [http://downloads.openwrt.io/vendors/gee/ralink/packages](http://downloads.openwrt.io/vendors/gee/ralink/packages/)
-* ar71xx opkg源（极1）： [http://downloads.openwrt.io/vendors/gee/ralink/packages](http://downloads.openwrt.io/vendors/gee/ar71xx/packages/)
+* ralink opkg源（极1s、极2、极3）：
+
+    src/gz openwrtio [http://downloads.openwrt.io/vendors/gee/ralink/packages](http://downloads.openwrt.io/vendors/gee/ralink/packages)
+ 
+* ar71xx opkg源（极1）：
+
+    src/gz openwrtio [http://downloads.openwrt.io/vendors/gee/ar71xx/packages](http://downloads.openwrt.io/vendors/gee/ar71xx/packages/)
 
 ### 优酷
 ### 小米
