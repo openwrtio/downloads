@@ -1,7 +1,7 @@
 language: bash
 before_install:
 - sudo apt-get update -qq
-- sudo apt-get install -y discount
+- sudo apt-get install -y curl discount
 install:
 - bash ./download.sh
 after_success:
@@ -11,6 +11,9 @@ after_success:
 - tar -zxvf /tmp/qiniu-devtools-linux_amd64-current.tar.gz -C ./qiniu/
 - export PATH=$PATH:$PWD/qiniu/
 - rm -f dl/*.tmp dl/*.html dl/*.md dl/*.dl
-- sed -e "s|{src}|$PWD/dl|g" -e "s|{access_key}|$qiniu_access_key|g" -e "s|{secret_key}|$qiniu_secret_key|g" qiniu.json > qiniu.json
-- qrsync-v2 qiniu.json
+- sed -e "s|{access_key}|$qiniu_access_key|g" -e "s|{secret_key}|$qiniu_secret_key|g" qiniu.json > qiniu.json
+- sed -e "s|{src}|$PWD/dl|g" qiniu.json > qiniu.json-dl
+- qrsync-v2 dl/qiniu.json-dl
+- sed -e "s|{src}|$PWD/barrier_breaker|g" qiniu.json > qiniu.json-barrier_breaker
+- qrsync-v2 dl/qiniu.json-barrier_breaker
 - bash ./index.sh -u $qiniu_user -p $qiniu_passwd
