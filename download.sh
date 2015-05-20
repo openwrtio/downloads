@@ -21,17 +21,14 @@ function download()
         fi
 
         thead_line_num=`grep -n "\-|\-" $file | awk -F: '{print $1}'`
-        head -n $thead_line_num $file > $absolute_dir/index.md
-        # 加入上级目录链接
-        sed -i '/-|-/a[../](../)| | ' $absolute_dir/index.md
+        echo 'filename|md5sum' > $absolute_dir/files.md
+        echo '--------|------' >> $absolute_dir/files.md
         offset=$(($thead_line_num+1))
-        tail -n +$offset $file | while read line
-        do
+        tail -n +$offset $file | while read line; do
             i=0
             new_line=""
             http_code=200
-            for part in `echo $line | sed 's/|/ /g'`
-            do
+            for part in `echo $line | sed 's/|/ /g'`; do
                 echo $i
                 echo $part
                 #第一列必须是下载地址
@@ -47,7 +44,7 @@ function download()
                     fi
                     http_code=`curl -sI "http://downloads.openwrt.io$relative_dir/$filename" | head -n 1 | awk '{print $2}'`
                     # 把文件名都改成链接
-                    new_line='['$filename']('$filename')'
+                    new_line=$filename
                 elif [ $i -eq 2 ]; then
                     #第3列可能是md5sum或者size
                     if [ $http_code -ne 200 ]; then
@@ -64,13 +61,11 @@ function download()
                         fi
                     fi
                     new_line=$new_line'|'$part
-                    echo $new_line >> $top_dir$relative_dir/index.md
+                    echo $new_line >> $top_dir$relative_dir/files.md
                 fi
                 i=$(($i+1))
             done
         done
-        #空格是为了可读性，机器不需要，所以把空格删除
-        sed -i 's/ | /|/g' $top_dir$relative_dir/index.md > $top_dir$relative_dir/index.md-nospace
     done
     return 0
     exit

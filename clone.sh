@@ -51,27 +51,3 @@ function clone()
 }
 tmp=$(clone $top_path)
 echo "$tmp"
-exit
-    # sudo apt-get install discount
-    markdown index.md > index.html.part.tmp
-
-    # sed不支持多行文本，所以要先把换行符去掉
-    tmp=`cat index.html.part.tmp | tr '\n' '\f'`
-    body=`echo $tmp | sed -e "s|<table>|<table class=\"pure-table pure-table-striped pure-table-horizontal\">|g"`
-    rm *.tmp
-    path=`pwd | sed -e "s|$top_path||"`
-    sed -e "s|{title}|Index of $path/|g" -e "s|{body}|$body|g" $top_path/tpl.html | tr '\f' '\n' > index.html
-    if [ $dir = $top_path':' ]; then
-        # 首页有标题，不需要这个标题
-        sed -i '/<h1>Index of \/<\/h1>/d' index.html
-        title=`grep '<h1>' index.html | sed -e 's|h1|title|g'`
-        sed -i "s|<title>Index of /</title>|$title|g" index.html
-    fi
-    qiniu_prefix=${path:1}"/"
-    if [ $qiniu_prefix = "/" ]; then
-        qiniu_prefix=""
-    fi
-    echo $qiniu_prefix
-    # 把index.html上传到 七牛的xxx/，用于列表服务
-    $top_path/qiniu/qrsctl put downloads-openwrt-io "$qiniu_prefix" index.html
-    $top_path/qiniu/qrsctl cdn/refresh downloads-openwrt-io http://downloads.openwrt.io/$qiniu_prefix
