@@ -1,5 +1,5 @@
 #!/bin/bash
-set -evx
+set -ev
 
 help="用法：$0 [-u qiniu_user] [-p qiniu_passwd]
 
@@ -61,12 +61,13 @@ for dir in $dirs; do
                     size=''
                     filename="$filename""/"
                 fi
-                if [ $filename = 'files.md' ] || [ $filename = 'index.html' ] || [ $filename = 'index.md' ] || [ $filename = 'README.md' ]; then
+                if [ $filename = 'origin.md' ] || [ $filename = 'index.html' ] || [ $filename = 'index.md' ] || [ $filename = 'README.md' ]; then
                     continue;
                 fi
                 echo $filename'|'$size >> files.md
             done
         fi
+        cat files.md
         thead_line_num=`grep -n "\-|\-" files.md | awk -F: '{print $1}'`
         head -n $thead_line_num files.md > index.md
         if [ $dir != $top_path ]; then

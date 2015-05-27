@@ -5,7 +5,6 @@ echo $top_dir
 
 function download()
 {
-    set -x
     files=`find $1 -name 'origin.md'`
     for file in $files; do
         absolute_dir=`dirname $file`
@@ -66,6 +65,8 @@ function download()
                 i=$(($i+1))
             done
         done
+        cat $top_dir$relative_dir/files.md
+        ls $top_dir$relative_dir
     done
     return 0
     exit
