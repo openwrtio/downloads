@@ -5,15 +5,19 @@ set -ev
 u=$qiniu_user
 p=$qiniu_passwd
 
-if [ -z $u ]; then
-    echo "$help"
-    exit 1
+if [ -z $qiniu_user ]; then
+    echo "请输入七牛用户名："
+    read -s qiniu_user
+    if [ -z $qiniu_user ]; then
+        echo '错误：未输入'
+        exit 1
+    fi
 fi
 
-if [ -z $p ]; then
-    echo "请输入密码："
-    read -s p
-    if [ -z $p ]; then
+if [ -z $qiniu_passwd ]; then
+    echo "请输入七牛密码："
+    read -s qiniu_passwd
+    if [ -z $qiniu_passwd ]; then
         echo '错误：未输入'
         exit 1
     fi
@@ -22,18 +26,18 @@ fi
 # 生成index.html
 top_path=$(cd `dirname $0`; pwd)
 
-$top_path/qiniu/qrsctl login $u $p
+$top_path/qiniu/qrsctl login $qiniu_user $qiniu_passwd
 
 echo $top_path
 dirs=`ls -R $top_path | grep ':' | awk -F: '{print $1}'`
 for dir in $dirs; do
+    if [ `basename $dir` = 'qiniu' ]; then
+        continue
+    fi
     echo $dir
     cd $dir
-    ls $dir
     if [ ! -f index.md ]; then
-        echo 'index.md not exist'
         if [ ! -f files.md ]; then
-        echo 'files.md not exist'
             echo 'filename|size' > files.md
             echo '--------|----' >> files.md
             tmp_lines=`ls --group-directories-first`
@@ -44,12 +48,11 @@ for dir in $dirs; do
                     filename="$filename""/"
                 fi
                 if [ $filename = 'files.md' ] || [ $filename = 'origin.md' ] || [ $filename = 'index.html' ] || [ $filename = 'index.md' ] || [ $filename = 'README.md' ]; then
-                    continue;
+                    continue
                 fi
                 echo $filename'|'$size >> files.md
             done
         fi
-        cat files.md
         thead_line_num=`grep -n "\-|\-" files.md | awk -F: '{print $1}'`
         head -n $thead_line_num files.md > index.md
         if [ $dir != $top_path ]; then
