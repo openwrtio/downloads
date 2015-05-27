@@ -16,4 +16,4 @@ after_success:
 - qrsync-v2 qiniu.json-dl
 - sed -e "s|{src}|$PWD/barrier_breaker|g" qiniu.json-withkey > qiniu.json-barrier_breaker
 - qrsync-v2 qiniu.json-barrier_breaker
-- bash ./index.sh -u $qiniu_user -p $qiniu_passwd
+- bash ./index.sh

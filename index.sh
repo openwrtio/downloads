@@ -1,30 +1,9 @@
 #!/bin/bash
 set -ev
 
-help="用法：$0 [-u qiniu_user] [-p qiniu_passwd]
-
-参数：
-  -h              : 帮助
-  -u qiniu_user   : 七牛用户名
-  -p qiniu_passwd : 七牛密码
-
-例子：
-  $0 -u jim -p 123456
-"
-u=""
-p=""
-while getopts u:p:h opt
-do
-    case $opt in
-    'u'|'p' )
-        eval $opt=$OPTARG
-        ;;
-    *)
-        echo "$help"
-        exit 1
-        ;;
-    esac
-done
+# 来自环境变量
+u=$qiniu_user
+p=$qiniu_passwd
 
 if [ -z $u ]; then
     echo "$help"
@@ -50,8 +29,11 @@ dirs=`ls -R $top_path | grep ':' | awk -F: '{print $1}'`
 for dir in $dirs; do
     echo $dir
     cd $dir
+    ls $dir
     if [ ! -f index.md ]; then
+        echo 'index.md not exist'
         if [ ! -f files.md ]; then
+        echo 'files.md not exist'
             echo 'filename|size' > files.md
             echo '--------|----' >> files.md
             tmp_lines=`ls --group-directories-first`
@@ -61,7 +43,7 @@ for dir in $dirs; do
                     size=''
                     filename="$filename""/"
                 fi
-                if [ $filename = 'origin.md' ] || [ $filename = 'index.html' ] || [ $filename = 'index.md' ] || [ $filename = 'README.md' ]; then
+                if [ $filename = 'files.md' ] || [ $filename = 'origin.md' ] || [ $filename = 'index.html' ] || [ $filename = 'index.md' ] || [ $filename = 'README.md' ]; then
                     continue;
                 fi
                 echo $filename'|'$size >> files.md
