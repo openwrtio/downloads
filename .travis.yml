@@ -12,8 +12,8 @@ after_success:
 - export PATH=$PATH:$PWD/qiniu/
 - rm -f dl/*.tmp dl/*.html dl/*.md dl/*.dl
 - sed -e "s|{access_key}|$qiniu_access_key|g" -e "s|{secret_key}|$qiniu_secret_key|g" qiniu.json > qiniu.json-withkey
-- sed -e "s|{src}|$PWD/dl|g" qiniu.json-withkey > qiniu.json-dl
+- sed -e "s|{src}|$PWD/dl|g" -e "s|{key_prefix}|dl/|g" qiniu.json-withkey > qiniu.json-dl
 - qrsync-v2 qiniu.json-dl
-- sed -e "s|{src}|$PWD/barrier_breaker|g" qiniu.json-withkey > qiniu.json-barrier_breaker
+- sed -e "s|{src}|$PWD/barrier_breaker|g" -e "s|{key_prefix}|barrier_breaker/|g" qiniu.json-withkey > qiniu.json-barrier_breaker
 - qrsync-v2 qiniu.json-barrier_breaker
 - bash ./index.sh
