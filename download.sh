@@ -65,8 +65,6 @@ function download()
                 i=$(($i+1))
             done
         done
-        cat $top_dir$relative_dir/files.md
-        ls $top_dir$relative_dir
     done
     return 0
     exit
