@@ -1,5 +1,9 @@
+barrier_breaker/**/files.md
+barrier_breaker/**/index.md
 dl/files.md
 dl/index.html
 dl/index.md
+*.gz
+*.xz
 index.html
 qiniu
