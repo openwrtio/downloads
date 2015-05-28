@@ -1,40 +1,23 @@
 #!/bin/bash
-set -evx
+set -ev
 
-help="用法：$0 [-u qiniu_user] [-p qiniu_passwd]
+# 来自环境变量
+u=$qiniu_user
+p=$qiniu_passwd
 
-参数：
-  -h              : 帮助
-  -u qiniu_user   : 七牛用户名
-  -p qiniu_passwd : 七牛密码
-
-例子：
-  $0 -u jim -p 123456
-"
-u=""
-p=""
-while getopts u:p:h opt
-do
-    case $opt in
-    'u'|'p' )
-        eval $opt=$OPTARG
-        ;;
-    *)
-        echo "$help"
+if [ -z $qiniu_user ]; then
+    echo "请输入七牛用户名："
+    read -s qiniu_user
+    if [ -z $qiniu_user ]; then
+        echo '错误：未输入'
         exit 1
-        ;;
-    esac
-done
-
-if [ -z $u ]; then
-    echo "$help"
-    exit 1
+    fi
 fi
 
-if [ -z $p ]; then
-    echo "请输入密码："
-    read -s p
-    if [ -z $p ]; then
+if [ -z $qiniu_passwd ]; then
+    echo "请输入七牛密码："
+    read -s qiniu_passwd
+    if [ -z $qiniu_passwd ]; then
         echo '错误：未输入'
         exit 1
     fi
@@ -43,11 +26,14 @@ fi
 # 生成index.html
 top_path=$(cd `dirname $0`; pwd)
 
-$top_path/qiniu/qrsctl login $u $p
+$top_path/qiniu/qrsctl login $qiniu_user $qiniu_passwd
 
 echo $top_path
 dirs=`ls -R $top_path | grep ':' | awk -F: '{print $1}'`
 for dir in $dirs; do
+    if [ `basename $dir` = 'qiniu' ]; then
+        continue
+    fi
     echo $dir
     cd $dir
     if [ ! -f index.md ]; then
@@ -61,8 +47,8 @@ for dir in $dirs; do
                     size=''
                     filename="$filename""/"
                 fi
-                if [ $filename = 'files.md' ] || [ $filename = 'index.html' ] || [ $filename = 'index.md' ] || [ $filename = 'README.md' ]; then
-                    continue;
+                if [ $filename = 'files.md' ] || [ $filename = 'origin.md' ] || [ $filename = 'index.html' ] || [ $filename = 'index.md' ] || [ $filename = 'README.md' ]; then
+                    continue
                 fi
                 echo $filename'|'$size >> files.md
             done

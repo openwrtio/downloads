@@ -5,7 +5,6 @@ echo $top_dir
 
 function download()
 {
-    set -x
     files=`find $1 -name 'origin.md'`
     for file in $files; do
         absolute_dir=`dirname $file`

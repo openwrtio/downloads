@@ -1,6 +1,6 @@
 {
     "src":          "{src}",
-    "dest":         "qiniu:access_key={access_key}&secret_key={secret_key}&bucket=downloads-openwrt-io",
+    "dest":         "qiniu:access_key={access_key}&secret_key={secret_key}&bucket=downloads-openwrt-io&key_prefix={key_prefix}",
     "deletable":    0,
     "debug_level":  1
 }
