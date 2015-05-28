@@ -15,15 +15,20 @@
     src/gz openwrtio [http://downloads.openwrt.io/vendors/gee/ar71xx/packages](http://downloads.openwrt.io/vendors/gee/ar71xx/packages/)
 
 ### 优酷
+
+    src/gz openwrtio [http://downloads.openwrt.io/vendors/youku/ramips/packages](http://downloads.openwrt.io/vendors/youku/ramips/packages/)
+
 ### 小米
 ### 魔豆
 
 ## 开源版
 
 * [Barrier Breaker 14.07稳定版](http://downloads.openwrt.io/barrier_breaker/14.07/)
+
   2014年10月发布
 
 * Attitude Adjustment 12.09稳定版
+
   2013年4月发布
 
 ## 为开源做贡献
