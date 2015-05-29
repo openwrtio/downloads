@@ -29,6 +29,8 @@ top_path=$(cd `dirname $0`; pwd)
 $top_path/qiniu/qrsctl login $qiniu_user $qiniu_passwd
 
 echo $top_path
+cd $top_path
+rm -f vendors/files.md vendors/index.md vendors/gee/ar71xx/index.md vendors/gee/files.md vendors/gee/ralink/index.md vendors/youku/files.md vendors/youku/index.md
 dirs=`ls -R $top_path | grep ':' | awk -F: '{print $1}'`
 for dir in $dirs; do
     if [ `basename $dir` = 'qiniu' ]; then
@@ -94,3 +96,5 @@ for dir in $dirs; do
     $top_path/qiniu/qrsctl cdn/refresh downloads-openwrt-io http://downloads.openwrt.io/$qiniu_prefix
     rm index.html
 done
+cd $top_path
+rm -f vendors/files.md vendors/index.md vendors/gee/ar71xx/index.md vendors/gee/files.md vendors/gee/ralink/index.md vendors/youku/files.md vendors/youku/index.md
