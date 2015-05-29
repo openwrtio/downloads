@@ -2,9 +2,13 @@ barrier_breaker/**/files.md
 barrier_breaker/**/index.md
 dl/files.md
 dl/index.md
+vendors/files.md
+vendors/index.html
 vendors/index.md
 vendors/gee/index.md
-*.gz
-*.xz
 index.html
 qiniu
+*.bz2
+*.gz
+*.pdf
+*.xz
