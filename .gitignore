@@ -1,5 +1,6 @@
 qiniu
 qiniu.json-*
+*.bin
 *.bz2
 *.gz
 *.pdf
