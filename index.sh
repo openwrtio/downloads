@@ -36,8 +36,12 @@ for dir in $dirs; do
     fi
     echo $dir
     cd $dir
+    auto_index_md=0
     if [ ! -f index.md ]; then
+        auto_index_md=1
+        auto_files_md=0
         if [ ! -f files.md ]; then
+            auto_files_md=1
             echo 'filename|size' > files.md
             echo '--------|----' >> files.md
             tmp_lines=`ls --group-directories-first`
@@ -65,12 +69,18 @@ for dir in $dirs; do
             # 把文件名都改成链接
             echo '['$filename']('$filename')|'$part2 >> index.md
         done
+        if [ $auto_files_md -eq 1 ]; then
+            rm files.md
+        fi
         #空格是为了可读性，机器不需要，所以把空格删除
         sed -i 's/ | /|/g' index.md
     fi
 
     # sudo apt-get install discount
     markdown index.md > tmp-index-part.html
+    if [ $auto_index_md -eq 1 ]; then
+        rm index.md
+    fi
 
     # sed不支持多行文本，所以要先把换行符去掉
     tmp=`cat tmp-index-part.html | tr '\n' '\f'`

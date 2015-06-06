@@ -1,10 +1,6 @@
-barrier_breaker/**/files.md
-barrier_breaker/**/index.md
-dl/files.md
-dl/index.md
-vendors/index.md
-vendors/gee/index.md
-*.gz
-*.xz
-index.html
 qiniu
+qiniu.json-*
+*.bz2
+*.gz
+*.pdf
+*.xz

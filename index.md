@@ -20,8 +20,13 @@
 
     src/gz openwrtio [http://downloads.openwrt.io/vendors/youku/ramips/packages](http://downloads.openwrt.io/vendors/youku/ramips/packages/)
 
-### 小米
-### 魔豆
+### 联发科MTK
+
+[http://downloads.openwrt.io/vendors/mtk/](http://downloads.openwrt.io/vendors/mtk/)
+
+### 后天网络
+
+[http://downloads.openwrt.io/vendors/vonets/](http://downloads.openwrt.io/vendors/vonets/)
 
 ## 开源版
 

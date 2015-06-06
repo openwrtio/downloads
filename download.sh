@@ -15,7 +15,7 @@ function download()
         #如果需要检查md5
         is_check_md5=0
         tmp=`head -n 1 $file | grep md5sum 2>&1`
-        if [ "x"$tmp != "x" ]; then
+        if [ "x""$tmp" != "x" ]; then
             is_check_md5=1
         fi
 
