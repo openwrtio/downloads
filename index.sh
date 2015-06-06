@@ -46,10 +46,11 @@ for dir in $dirs; do
             echo '--------|----' >> files.md
             tmp_lines=`ls --group-directories-first`
             for filename in $tmp_lines; do
-                size=''
                 if [ -d $filename ]; then
                     size=''
                     filename="$filename""/"
+                else
+                    size=`ls -lh $filename | awk '{print $5}'`
                 fi
                 if [ $filename = 'files.md' ] || [ $filename = 'origin.md' ] || [ $filename = 'index.html' ] || [ $filename = 'index.md' ] || [ $filename = 'README.md' ]; then
                     continue
