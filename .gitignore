@@ -8,6 +8,7 @@ vendors/index.md
 vendors/gee/index.md
 index.html
 qiniu
+qiniu.json-*
 *.bz2
 *.gz
 *.pdf
