@@ -2,6 +2,7 @@ filename|size
 --------|----
 packages/|
 hc5761-20140619.tar.gz|240M
+0.9012.1.9277s-HC5861-sysupgrade-20150603-15fa16e2.bin|13M
 0.9012.1.9277s-HC5761-sysupgrade-20150603-3356d35e.bin|14M
 0.9012.1.9277s-HC5661-sysupgrade-20150603-4143ebbd.bin|13M
 0.9010.1.8595s-HC5861-sysupgrade-20150318-5db29eb5.bin|13M
