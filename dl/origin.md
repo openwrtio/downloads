@@ -9,5 +9,6 @@ http://www.netfilter.org/projects/iptables/files/iptables-1.4.10.tar.bz2 | iptab
 https://www.kernel.org/pub/linux/kernel/v2.6/linux-2.6.36.tar.xz | linux-2.6.36.tar.xz | a59fae4bd5e2245715a3b9ecfe56d6f6
 http://www.openssl.org/source/openssl-1.0.1c.tar.gz | openssl-1.0.1c.tar.gz | ae412727c8c15b67880aef7bd2999b2e
 http://www.openssl.org/source/openssl-1.0.2a.tar.gz | openssl-1.0.2a.tar.gz | a06c547dac9044161a477211049f60ef
+https://github.com/openwrtio/owmp/releases/download/0.3.0/owmp-0.3.0.tar.gz | owmp-0.3.0.tar.gz | ca770f3f3d8afaed1c06a34e5dac3a1e
 https://github.com/wifidog/wifidog-gateway/releases/download/1.2.1/wifidog-gateway-1.2.1.tar.gz | wifidog-gateway-1.2.1.tar.gz | 3c9c35968f154b1c9224245a5d708d5f
 http://www.zlib.net/zlib-1.2.7.tar.bz2 | zlib-1.2.7.tar.bz2 | 2ab442d169156f34c379c968f3f482dd
