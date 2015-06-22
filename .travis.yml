@@ -13,7 +13,7 @@ after_success:
 - rm -f dl/*.tmp dl/*.html dl/*.dl
 - sed -e "s|{access_key}|$qiniu_access_key|g" -e "s|{secret_key}|$qiniu_secret_key|g" qiniu.json > qiniu.json-withkey
 - sed -e "s|{src}|$PWD/dl|g" -e "s|{key_prefix}|dl/|g" qiniu.json-withkey > qiniu.json-dl
-- qrsync-v2 qiniu.json-dl
+- qrsync --check-exist qiniu.json-dl
 - sed -e "s|{src}|$PWD/barrier_breaker|g" -e "s|{key_prefix}|barrier_breaker/|g" qiniu.json-withkey > qiniu.json-barrier_breaker
-- qrsync-v2 qiniu.json-barrier_breaker
+- qrsync --check-exist qiniu.json-barrier_breaker
 - bash ./index.sh
