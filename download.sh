@@ -1,5 +1,5 @@
 #!/bin/bash
-set -ev
+set -e
 top_dir=$(cd `dirname $0`; pwd)
 echo $top_dir
 
@@ -36,6 +36,7 @@ function download()
                     origin_filename=`basename $uri`
                 elif [ $i -eq 1 ]; then
                     #第2列必须是文件名，如果为空的话，将使用下载地址里相同的文件名
+                    #todo 如果为空的话，for循环结束了，不会进到这里……
                     if [ $part = '' ]; then
                         filename=$origin_filename
                     else
@@ -44,12 +45,14 @@ function download()
                     http_code=`curl -sI "http://downloads.openwrt.io$relative_dir/$filename" | head -n 1 | awk '{print $2}'`
                     # 把文件名都改成链接
                     new_line=$filename
-                elif [ $i -eq 2 ]; then
-                    #第3列可能是md5sum或者size
                     if [ $http_code -ne 200 ]; then
                         if [ ! -f $top_dir$relative_dir/$filename ]; then
                             wget -O $top_dir$relative_dir/$filename $uri
                         fi
+                    fi
+                elif [ $i -eq 2 ]; then
+                    #第3列可能是md5sum或者size
+                    if [ $http_code -ne 200 ]; then
                         if [ $is_check_md5 -eq 1 ]; then
                             expected_md5=$part
                             md5=`md5sum $top_dir$relative_dir/$filename | awk '{print $1}'`
