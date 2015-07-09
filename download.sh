@@ -50,7 +50,7 @@ function download()
                 if [ ! -f $top_dir$relative_dir/$filename ]; then
                     wget -O $top_dir$relative_dir/$filename $uri
                 fi
-                if [ $is_check_md5 -eq 1 ] && [ $md5_or_size != "" ]; then
+                if [ $is_check_md5 -eq 1 ] && [ "x"$md5_or_size != "x" ]; then
                     md5=`md5sum $top_dir$relative_dir/$filename | awk '{print $1}'`
                     if [ $md5_or_size != $md5 ]; then
                         echo "error: md5 not match"
