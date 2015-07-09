@@ -1,6 +1,6 @@
 #OpenWrt Downloads国内CDN下载
 
-提供OpenWrt SDK、opkg软件仓库、ipk，感谢[七牛云储存](https://portal.qiniu.com/signup?code=3lafkpsz7yes1)提供国内免费CDN加速
+提供OpenWrt SDK、opkg软件仓库、ipk
 
 ## Vendors Edition 厂商版
 
@@ -16,6 +16,10 @@
 * [Barrier Breaker 14.07 稳定版](http://downloads.openwrt.io/barrier_breaker/14.07/)（2014年10月发布）
 
 * [Attitude Adjustment 12.09 稳定版](http://downloads.openwrt.io/attitude_adjustment/12.09/)（2013年4月发布）
+
+## 其他资源
+
+* [dl/](dl/)
 
 ## Join us 为开源做贡献
 
