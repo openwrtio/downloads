@@ -343,7 +343,6 @@ http://localhost/gdb-linaro-7.6-2013.05.tar.bz2||
 http://localhost/gdbm-1.11.tar.gz||
 http://localhost/genext2fs-1.4.1.tar.gz||
 http://localhost/gengetopt-2.22.6.tar.gz||
-http://localhost/get.cgi?calcurse-2.8.tar.gz||
 http://localhost/gettext-0.18.2.1.tar.gz||
 http://localhost/giflib-5.1.0.tar.bz2||
 http://localhost/git-2.0.0.tar.xz||
