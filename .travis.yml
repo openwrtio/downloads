@@ -1,7 +1,9 @@
 language: bash
-before_install:
-- sudo apt-get update -qq
-- sudo apt-get install -y curl discount
+addons:
+  apt:
+    packages:
+    - curl
+    - discount
 install:
 - bash ./download.sh
 after_success:
