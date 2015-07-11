@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -ex
 top_dir=$(cd `dirname $0`; pwd)
 echo $top_dir
 
