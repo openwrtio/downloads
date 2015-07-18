@@ -638,14 +638,19 @@ http://localhost/libzip-0.10.1.tar.bz2||
 http://localhost/libzstream-2012-06-11-3b9748999aa3d81a5811eff1cc221266a2588e28.tar.gz||
 http://localhost/lighttpd-1.4.35.tar.xz||
 http://localhost/linux-2.6.36.tar.xz||
-http://localhost/linux-3.10.28.tar.xz||
-http://localhost/linux-3.10.44.tar.xz||
-http://localhost/linux-3.10.49.tar.xz||
-http://localhost/linux-3.14.16.tar.xz||
-http://localhost/linux-3.14.18.tar.xz||
-http://localhost/linux-3.18.14.tar.xz||
-http://localhost/linux-3.18.16.tar.xz||
-http://localhost/linux-3.18.17.tar.xz||
+https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/linux-2.6.32.67.tar.xz | linux-2.6.32.67.tar.xz |
+https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.10.28.tar.xz | linux-3.10.28.tar.xz |
+https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.10.44.tar.xz | linux-3.10.44.tar.xz |
+https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.10.49.tar.xz | linux-3.10.49.tar.xz |
+https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.10.84.tar.xz | linux-3.10.84.tar.xz |
+https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.12.44.tar.xz | linux-3.12.44.tar.xz |
+https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.14.16.tar.xz | linux-3.14.16.tar.xz |
+https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.14.18.tar.xz | linux-3.14.18.tar.xz |
+https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.14.48.tar.xz | linux-3.14.48.tar.xz |
+https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.14.tar.xz | linux-3.18.14.tar.xz |
+https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.16.tar.xz | linux-3.18.16.tar.xz |
+https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.17.tar.xz | linux-3.18.17.tar.xz |
+https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.18.tar.xz | linux-3.18.18.tar.xz |
 http://localhost/linux-3.3.8.tar.bz2||
 http://localhost/linux-atm-2.5.2.tar.gz||
 http://localhost/linux-firmware-2014-03-16-f8c22c692bdee57a20b092e647464ff6176df3ed.tar.xz||

@@ -1,9 +1,0 @@
-filename|size
---------|----
-packages/|
-hc6361-r5247-i386.tar.gz|288M
-0.9008.2.8061s-tw150v1-sysupgrade-20141231-4322bdfe.bin|9.7M
-0.9007.1.7117s-tw150v1-sysupgrade-20141105-5810b4fb.bin|9.3M
-0.9006.2.6020s-tw150v1-sysupgrade-20140911-c275a9e6.bin|9.3M
-0.9005.5384s-tw150v1-sysupgrade-20140825-28ba23e5.bin|9.1M
-0.9004.3685s-tw150v1-sysupgrade-2014060901.bin|12M
