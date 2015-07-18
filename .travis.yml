@@ -2,10 +2,9 @@ language: bash
 before_install:
 - sudo apt-get update -qq
 - sudo apt-get install -y curl discount unzip
-- wget -O /tmp/gmirror.tar.gz https://github.com/sinkcup/gmirror/archive/0.1.0.tar.gz
-- mkdir -p /tmp/gmirror
-- tar -zxvf /tmp/gmirror.tar.gz -C /tmp/gmirror
-- cp /tmp/gmirror/*.sh /tmp/gmirror/tpl.html ./
+- wget -O /tmp/gmirror-0.1.0.tar.gz https://github.com/sinkcup/gmirror/archive/0.1.0.tar.gz
+- tar -zxvf /tmp/gmirror.tar.gz -C /tmp/
+- cp /tmp/gmirror-0.1.0/*.sh /tmp/gmirror-0.1.0/tpl.html ./
 install:
 - bash ./download.sh
 script:
