@@ -1,7 +1,17 @@
+index.html
 qiniu
 qiniu.json-*
+tmp-*
+*.arm
 *.bin
 *.bz2
 *.gz
+*.jar
 *.pdf
+*.ram
+*.rom
+*.sha1
+*.tar
+*.tgz
 *.xz
+*.zip
