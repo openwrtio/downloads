@@ -1,19 +1,15 @@
 language: bash
 before_install:
 - sudo apt-get update -qq
-- sudo apt-get install -y curl discount
+- sudo apt-get install -y curl discount unzip
+- wget -O /tmp/gmirror.tar.gz https://github.com/sinkcup/gmirror/archive/0.1.0.tar.gz
+- mkdir -p /tmp/gmirror
+- tar -zxvf /tmp/gmirror.tar.gz -C /tmp/gmirror
+- cp /tmp/gmirror/*.sh /tmp/gmirror/tpl.html ./
 install:
 - bash ./download.sh
-after_success:
+script:
 - test $TRAVIS_PULL_REQUEST == "false" && echo "travis-ci don't support qiniu, so deploy manually" || exit 0
-- wget -O /tmp/qiniu-devtools-linux_amd64-current.tar.gz http://devtools.qiniu.io/qiniu-devtools-linux_amd64-current.tar.gz
-- mkdir qiniu
-- tar -zxvf /tmp/qiniu-devtools-linux_amd64-current.tar.gz -C ./qiniu/
+- bash ./before_upload.sh
 - export PATH=$PATH:$PWD/qiniu/
-- rm -f dl/*.tmp dl/*.html dl/*.dl
-- sed -e "s|{access_key}|$qiniu_access_key|g" -e "s|{secret_key}|$qiniu_secret_key|g" qiniu.json > qiniu.json-withkey
-- sed -e "s|{src}|$PWD/dl|g" -e "s|{key_prefix}|dl/|g" qiniu.json-withkey > qiniu.json-dl
-- qrsync --check-exist qiniu.json-dl
-- sed -e "s|{src}|$PWD/barrier_breaker|g" -e "s|{key_prefix}|barrier_breaker/|g" qiniu.json-withkey > qiniu.json-barrier_breaker
-- qrsync --check-exist qiniu.json-barrier_breaker
-- bash ./index.sh
+- bash ./upload.sh
