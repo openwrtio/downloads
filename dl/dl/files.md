@@ -177,10 +177,6 @@ ctorrent-svn-r322.tar.gz| 243KiB|
 CUnit-2.1-0-src.tar.gz| 615KiB|
 cups-1.5.4-source.tar.bz2| 9.2MiB|
 cups-bjnp-1.2.tar.gz| 137KiB|
-curl-7.33.0.tar.bz2| 2.7MiB|
-curl-7.34.0.tar.bz2| 2.7MiB|
-curl-7.36.0.tar.bz2| 2.7MiB|
-curl-7.38.0.tar.bz2| 3.1MiB|
 curlftpfs-0.9.2.tar.gz| 357KiB|
 cutter-1.03.tgz| 13KiB|
 cwiid-0.6.00.tgz| 139KiB|
