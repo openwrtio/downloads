@@ -23,3 +23,6 @@ http://ur.ikcd.net/HC5761-sysupgrade-20140825-503d031a.bin | 0.9005.5699s-HC5761
 http://ur.ikcd.net/HC5661-sysupgrade-20140825-5deb234b.bin | 0.9005.5699s-HC5661-sysupgrade-20140825-5deb234b.bin |
 http://ur.ikcd.net/HC5761-sysupgrade-2014060900.bin        | 0.9004.3685s-HC5761-sysupgrade-2014060900.bin |
 http://ur.ikcd.net/HC5661-sysupgrade-2014060900.bin        | 0.9004.3685s-HC5661-sysupgrade-2014060900.bin |
+http://rssn.cn/roms/uboot/HC5861-uboot.bin | HC5861-uboot.bin |
+http://rssn.cn/roms/uboot/HC5761-uboot.bin | HC5761-uboot.bin |
+http://rssn.cn/roms/uboot/HC5661-uboot.bin | HC5661-uboot.bin |
