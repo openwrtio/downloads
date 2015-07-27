@@ -2,7 +2,7 @@ uri | filename | md5
 ----|----------|----
 http://downloads.openwrt.org/barrier_breaker/14.07/ramips/mt7620a/OpenWrt-ImageBuilder-ramips_mt7620a-for-linux-x86_64.tar.bz2
 http://downloads.openwrt.org/barrier_breaker/14.07/ramips/mt7620a/OpenWrt-SDK-ramips-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
-http://downloads.openwrt.org/barrier_breaker/14.07/ramips/mt7620a/OpenWrt-Toolchain-ramips-for-mipsel_24kec%2bdsp-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
+http://downloads.openwrt.org/barrier_breaker/14.07/ramips/mt7620a/OpenWrt-Toolchain-ramips-for-mipsel_24kec+dsp-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
 http://downloads.openwrt.org/barrier_breaker/14.07/ramips/mt7620a/config.ramips_mt7620a
 http://downloads.openwrt.org/barrier_breaker/14.07/ramips/mt7620a/kernel-debug.tar.bz2
 http://downloads.openwrt.org/barrier_breaker/14.07/ramips/mt7620a/md5sums
