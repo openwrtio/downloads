@@ -4,7 +4,7 @@ before_install:
 - sudo apt-get install -y curl discount unzip
 - wget -O /tmp/gmirror-0.2.0.tar.gz https://github.com/sinkcup/gmirror/archive/0.2.0.tar.gz
 - tar -zxvf /tmp/gmirror-0.2.0.tar.gz -C /tmp/
-- cp /tmp/gmirror-0.2.0/*.sh /tmp/gmirror-0.1.0/tpl.html ./
+- cp /tmp/gmirror-0.2.0/*.sh /tmp/gmirror-0.2.0/tpl.html ./
 install:
 - bash ./download.sh
 script:
