@@ -1,5 +1,6 @@
 uri | filename | md5sum
 ----|----------|-------
+http://mirror2.openwrt.org/sources/compat-wireless-2015-07-21.tar.bz2 | compat-wireless-2015-07-21.tar.bz2 |
 http://curl.haxx.se/download/curl-7.29.0.tar.bz2 | curl-7.29.0.tar.bz2 |
 http://curl.haxx.se/download/curl-7.33.0.tar.bz2 | curl-7.33.0.tar.bz2 |
 http://curl.haxx.se/download/curl-7.34.0.tar.bz2 | curl-7.34.0.tar.bz2 |
@@ -25,3 +26,4 @@ https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.18.tar.xz | linux-3.18.1
 https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.19.tar.xz | linux-3.18.19.tar.xz |
 https://tls.mbed.org/download/mbedtls-1.3.11-gpl.tgz | mbedtls-1.3.11-gpl.tgz |
 http://www.multiprecision.org/mpc/download/mpc-1.0.2.tar.gz | mpc-1.0.2.tar.gz |
+https://www.openssl.org/source/openssl-1.0.2d.tar.gz | openssl-1.0.2d.tar.gz |
