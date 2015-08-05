@@ -331,7 +331,6 @@ gatling-0.11.tar.bz2| 92KiB|
 gawk-3.1.8.tar.gz| 2.6MiB|
 gcc-linaro-4.6-2012.02.tar.bz2| 69MiB|
 gcc-linaro-4.6-2013.05.tar.bz2| 69MiB|
-gcc-linaro-4.8-2014.04.tar.xz| 67MiB|
 gdb-6.8a.tar.bz2| 16MiB|
 gdb-7.5.tar.bz2| 21MiB|
 gdb-linaro-7.2-2011.03-0.tar.bz2| 19MiB|
