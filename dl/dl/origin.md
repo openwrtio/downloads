@@ -1,13 +1,17 @@
 uri | filename | md5sum
 ----|----------|-------
-http://mirror2.openwrt.org/sources/compat-wireless-2015-07-21.tar.bz2 | compat-wireless-2015-07-21.tar.bz2 |
+http://enduser.subsignal.org/~trondah/source-tree/dl/compat-wireless-2015-07-21.tar.bz2 | compat-wireless-2015-07-21.tar.bz2 |
 http://curl.haxx.se/download/curl-7.29.0.tar.bz2 | curl-7.29.0.tar.bz2 |
 http://curl.haxx.se/download/curl-7.33.0.tar.bz2 | curl-7.33.0.tar.bz2 |
 http://curl.haxx.se/download/curl-7.34.0.tar.bz2 | curl-7.34.0.tar.bz2 |
 http://curl.haxx.se/download/curl-7.36.0.tar.bz2 | curl-7.36.0.tar.bz2 |
 http://curl.haxx.se/download/curl-7.38.0.tar.bz2 | curl-7.38.0.tar.bz2 |
 http://curl.haxx.se/download/curl-7.43.0.tar.bz2 | curl-7.43.0.tar.bz2 |
+http://pkgs.fedoraproject.org/repo/pkgs/flite/flite-1.3-release.tar.gz/ae0aca1cb7b4801f4372f3a75a9e52b5/flite-1.3-release.tar.gz | flite-1.3-release.tar.gz |
 https://launchpadlibrarian.net/172450987/gcc-linaro-4.8-2014.04.tar.xz | gcc-linaro-4.8-2014.04.tar.xz |
+https://ftp.gnu.org/gnu/gdb/gdb-6.8a.tar.bz2 | gdb-6.8a.tar.bz2 |
+ftp://ftp.belnet.be/mirror/ftp.gnu.org/gnu/gettext/gettext-0.18.1.1.tar.gz | gettext-0.18.1.1.tar.gz |
+http://ftp.gnu.org/gnu/gmp/gmp-5.1.3.tar.bz2 | gmp-5.1.3.tar.bz2 |
 http://ipset.netfilter.org/ipset-6.14.tar.bz2 | ipset-6.14.tar.bz2 |
 http://www.netfilter.org/projects/libmnl/files/libmnl-1.0.1.tar.bz2 | libmnl-1.0.1.tar.bz2 |
 https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/linux-2.6.32.67.tar.xz | linux-2.6.32.67.tar.xz |
@@ -25,5 +29,18 @@ https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.17.tar.xz | linux-3.18.1
 https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.18.tar.xz | linux-3.18.18.tar.xz |
 https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.19.tar.xz | linux-3.18.19.tar.xz |
 https://tls.mbed.org/download/mbedtls-1.3.11-gpl.tgz | mbedtls-1.3.11-gpl.tgz |
+http://www.multiprecision.org/mpc/download/mpc-0.26.tar.xz | mpc-0.26.tar.xz |
+http://www.multiprecision.org/mpc/download/mpc-0.9.tar.gz | mpc-0.9.tar.gz |
+http://www.multiprecision.org/mpc/download/mpc-1.0.1.tar.gz | mpc-1.0.1.tar.gz |
 http://www.multiprecision.org/mpc/download/mpc-1.0.2.tar.gz | mpc-1.0.2.tar.gz |
+http://ftp.cc.uoc.gr/mirrors/linux/frugalware/frugalware-current/source/network-extra/obfsproxy/obfsproxy-0.1.4.tar.gz | obfsproxy-0.1.4.tar.gz |
+https://www.openssl.org/source/openssl-1.0.1c.tar.gz | openssl-1.0.1c.tar.gz |
+https://www.openssl.org/source/openssl-1.0.1e.tar.gz | openssl-1.0.1e.tar.gz |
+https://www.openssl.org/source/openssl-1.0.1h.tar.gz | openssl-1.0.1h.tar.gz |
+https://www.openssl.org/source/openssl-1.0.1j.tar.gz | openssl-1.0.1j.tar.gz |
+https://www.openssl.org/source/openssl-1.0.1i.tar.gz | openssl-1.0.1i.tar.gz |
+https://www.openssl.org/source/openssl-1.0.2.tar.gz | openssl-1.0.2.tar.gz |
+https://www.openssl.org/source/openssl-1.0.2c.tar.gz | openssl-1.0.2c.tar.gz |
 https://www.openssl.org/source/openssl-1.0.2d.tar.gz | openssl-1.0.2d.tar.gz |
+https://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p0.tar.bz2 | ruby-1.9.2-p0.tar.bz2 |
+https://download.samba.org/pub/samba/stable/samba-3.6.5.tar.gz | samba-3.6.5.tar.gz |
