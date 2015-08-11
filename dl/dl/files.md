@@ -740,10 +740,6 @@ mosquitto-0.15.tar.gz| 145KiB|
 mosquitto-1.3.5.tar.gz| 344KiB|
 motion-20110826-051001.tar.gz| 443KiB|
 mountd-0.1.tar.bz2| 13KiB|
-mpc-0.26.tar.xz| 103KiB|
-mpc-0.9.tar.gz| 553KiB|
-mpc-1.0.1.tar.gz| 610KiB|
-mpc-1.0.2.tar.gz| 619KiB|
 mpd-0.17.6.tar.bz2| 573KiB|
 mpdas-0.3.0.tar.bz2| 19KiB|
 mpfr-3.0.0.tar.bz2| 1.1MiB|
@@ -868,14 +864,6 @@ openrrcp-0.2.1.tar.gz| 71KiB|
 opensc-20140317.tar.gz| 1.2MiB|
 openslp-1.2.1.tar.gz| 866KiB|
 openssh-6.6p1.tar.gz| 1.3MiB|
-openssl-1.0.1c.tar.gz| 4.3MiB|
-openssl-1.0.1e.tar.gz| 4.3MiB|
-openssl-1.0.1h.tar.gz| 4.3MiB|
-openssl-1.0.1i.tar.gz| 4.3MiB|
-openssl-1.0.1j.tar.gz| 4.3MiB|
-openssl-1.0.2c.tar.gz| 5.1MiB|
-openssl-1.0.2d.tar.gz| 5.1MiB|
-openssl-1.0.2.tar.gz| 5.1MiB|
 openswan-2.6.41.tar.gz| 8.4MiB|
 opentracker-20130804.tar.bz2| 56KiB|
 openvpn-2.3.4.tar.gz| 1.2MiB|
