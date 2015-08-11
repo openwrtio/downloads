@@ -17,9 +17,9 @@
 
 * [Attitude Adjustment 12.09 稳定版](http://downloads.openwrt.io/attitude_adjustment/12.09/)（2013年4月发布）
 
-## 其他资源
+## 软件代码下载
 
-* [dl/](dl/)
+* [sources/](sources/)
 
 ## Join us 为开源做贡献
 
