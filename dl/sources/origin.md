@@ -29,7 +29,6 @@ https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.17.tar.xz | linux-3.18.1
 https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.18.tar.xz | linux-3.18.18.tar.xz |
 https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.19.tar.xz | linux-3.18.19.tar.xz |
 https://tls.mbed.org/download/mbedtls-1.3.11-gpl.tgz | mbedtls-1.3.11-gpl.tgz |
-http://www.multiprecision.org/mpc/download/mpc-0.26.tar.xz | mpc-0.26.tar.xz |
 http://www.multiprecision.org/mpc/download/mpc-0.9.tar.gz | mpc-0.9.tar.gz |
 http://www.multiprecision.org/mpc/download/mpc-1.0.1.tar.gz | mpc-1.0.1.tar.gz |
 http://www.multiprecision.org/mpc/download/mpc-1.0.2.tar.gz | mpc-1.0.2.tar.gz |
@@ -42,5 +41,6 @@ https://www.openssl.org/source/openssl-1.0.1i.tar.gz | openssl-1.0.1i.tar.gz |
 https://www.openssl.org/source/openssl-1.0.2.tar.gz | openssl-1.0.2.tar.gz |
 https://www.openssl.org/source/openssl-1.0.2c.tar.gz | openssl-1.0.2c.tar.gz |
 https://www.openssl.org/source/openssl-1.0.2d.tar.gz | openssl-1.0.2d.tar.gz |
+https://github.com/openwrtio/owmp/releases/download/0.4.0/owmp-0.4.0.tar.gz | owmp-0.4.0.tar.gz |
 https://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p0.tar.bz2 | ruby-1.9.2-p0.tar.bz2 |
 https://download.samba.org/pub/samba/stable/samba-3.6.5.tar.gz | samba-3.6.5.tar.gz |
