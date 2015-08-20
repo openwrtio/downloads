@@ -3,6 +3,7 @@ uri | filename | md5
 https://code.hiwifi.com/wiki/hiwifi/sdk-howto | hc5761-20140619.tar.gz |
 https://code.hiwifi.com/wiki/hiwifi/sdk-howto | hc5761-r5104-i386.tar.gz |
 http://ur.ikcd.net/HC5861-sysupgrade-20150801-3c058db6.bin | 0.9013.1.9653s-HC5861-sysupgrade-20150801-3c058db6.bin |
+http://ur.ikcd.net/HC5761-sysupgrade-20150801-805354de.bin | 0.9013.1.9653s-HC5761-sysupgrade-20150801-805354de.bin
 http://ur.ikcd.net/HC5861-sysupgrade-20150603-15fa16e2.bin | 0.9012.1.9277s-HC5861-sysupgrade-20150603-15fa16e2.bin |
 http://ur.ikcd.net/HC5761-sysupgrade-20150603-3356d35e.bin | 0.9012.1.9277s-HC5761-sysupgrade-20150603-3356d35e.bin |
 http://ur.ikcd.net/HC5661-sysupgrade-20150603-4143ebbd.bin | 0.9012.1.9277s-HC5661-sysupgrade-20150603-4143ebbd.bin |
