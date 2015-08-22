@@ -7,12 +7,14 @@ http://curl.haxx.se/download/curl-7.34.0.tar.bz2 | curl-7.34.0.tar.bz2 |
 http://curl.haxx.se/download/curl-7.36.0.tar.bz2 | curl-7.36.0.tar.bz2 |
 http://curl.haxx.se/download/curl-7.38.0.tar.bz2 | curl-7.38.0.tar.bz2 |
 http://curl.haxx.se/download/curl-7.43.0.tar.bz2 | curl-7.43.0.tar.bz2 |
+http://thekelleys.org.uk/dnsmasq/dnsmasq-2.75.tar.xz | dnsmasq-2.75.tar.xz |
 http://pkgs.fedoraproject.org/repo/pkgs/flite/flite-1.3-release.tar.gz/ae0aca1cb7b4801f4372f3a75a9e52b5/flite-1.3-release.tar.gz | flite-1.3-release.tar.gz |
 https://launchpadlibrarian.net/172450987/gcc-linaro-4.8-2014.04.tar.xz | gcc-linaro-4.8-2014.04.tar.xz |
 https://ftp.gnu.org/gnu/gdb/gdb-6.8a.tar.bz2 | gdb-6.8a.tar.bz2 |
 ftp://ftp.belnet.be/mirror/ftp.gnu.org/gnu/gettext/gettext-0.18.1.1.tar.gz | gettext-0.18.1.1.tar.gz |
 http://ftp.gnu.org/gnu/gmp/gmp-5.1.3.tar.bz2 | gmp-5.1.3.tar.bz2 |
 http://ipset.netfilter.org/ipset-6.14.tar.bz2 | ipset-6.14.tar.bz2 |
+https://www.kernel.org/pub/software/network/iw/iw-4.1.tar.xz | iw-4.1.tar.xz |
 http://www.netfilter.org/projects/libmnl/files/libmnl-1.0.1.tar.bz2 | libmnl-1.0.1.tar.bz2 |
 https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/linux-2.6.32.67.tar.xz | linux-2.6.32.67.tar.xz |
 https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.10.28.tar.xz | linux-3.10.28.tar.xz |
@@ -32,6 +34,7 @@ https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.20.tar.xz | linux-3.18.2
 https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.1.5.tar.xz | linux-4.1.5.tar.xz |
 https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.1.6.tar.xz | linux-4.1.6.tar.xz |
 https://tls.mbed.org/download/mbedtls-1.3.11-gpl.tgz | mbedtls-1.3.11-gpl.tgz |
+https://tls.mbed.org/download/mbedtls-2.0.0-gpl.tgz | mbedtls-2.0.0-gpl.tgz |
 http://www.multiprecision.org/mpc/download/mpc-0.9.tar.gz | mpc-0.9.tar.gz |
 http://www.multiprecision.org/mpc/download/mpc-1.0.1.tar.gz | mpc-1.0.1.tar.gz |
 http://www.multiprecision.org/mpc/download/mpc-1.0.2.tar.gz | mpc-1.0.2.tar.gz |
