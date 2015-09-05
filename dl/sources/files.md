@@ -1056,9 +1056,6 @@ setpwc-1.3.tgz| 9.5KiB|
 setserial-2.17.tar.gz| 52KiB|
 sg3-utils\_1.24.orig.tar.gz| 491KiB|
 shadow-4.1.5.1.tar.bz2| 2.1MiB|
-shadowsocks-client-0.5-d8ef02715f40de0fb7ba0f7267d3f8260f38ba80.tar.gz| 14KiB|
-shadowsocks-libev-1.6.3.tar.gz| 1.1MiB|
-shadowsocks-libev-2.1.4.tar.gz| 751KiB|
 shairport-2014-05-08-078b21043cdcef6ffad7452db27f036770b23b0c.tar.gz| 57KiB|
 shat-0.9.7.tar.gz| 61KiB|
 shell-fm-0.7.tar.bz2| 41KiB|
