@@ -1,6 +1,6 @@
 uri | filename | md5
 ----|----------|----
-http://hiwifi-sdk.oss.aliyuncs.com/HC5661s-mediatek-sdk.tar.bz2 | |
+http://hiwifi-sdk.oss.aliyuncs.com/HC5661s-mediatek-sdk.tar.bz2 | HC5661s-mediatek-sdk.tar.bz2 |
 http://hiwifi-sdk.oss.aliyuncs.com/HC5761s-mediatek-sdk.tar.bz2 | |
 http://ur.ikcd.net/HC5661A-sysupgrade-20150603-d1929a87.bin | 0.9012.1.9277s-HC5661A-sysupgrade-20150603-d1929a87.bin |
 http://ur.ikcd.net/HC5661A-sysupgrade-20150518-50bf0edc.bin | 0.9011.1.9117s-HC5661A-sysupgrade-20150518-50bf0edc.bin |
