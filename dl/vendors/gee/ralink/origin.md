@@ -1,5 +1,8 @@
 uri | filename | md5
 ----|----------|----
+http://hiwifi-sdk.oss.aliyuncs.com/HC5661-ralink-sdk.tar.bz2 | |
+http://hiwifi-sdk.oss.aliyuncs.com/HC5761-ralink-sdk.tar.bz2 | |
+http://hiwifi-sdk.oss.aliyuncs.com/HC5861-ralink-sdk.tar.bz2 | |
 https://code.hiwifi.com/wiki/hiwifi/sdk-howto | hc5761-20140619.tar.gz |
 https://code.hiwifi.com/wiki/hiwifi/sdk-howto | hc5761-r5104-i386.tar.gz |
 http://ur.ikcd.net/HC5861-sysupgrade-20150801-3c058db6.bin | 0.9013.1.9653s-HC5861-sysupgrade-20150801-3c058db6.bin |
