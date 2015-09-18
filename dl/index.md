@@ -13,6 +13,8 @@
 
 ## Open Soure Edition 开源版
 
+* [Chaos Calmer 15.05 稳定版](http://downloads.openwrt.io/chaos_calmer/15.05/)（2015年9月发布）
+
 * [Barrier Breaker 14.07 稳定版](http://downloads.openwrt.io/barrier_breaker/14.07/)（2014年10月发布）
 
 * [Attitude Adjustment 12.09 稳定版](http://downloads.openwrt.io/attitude_adjustment/12.09/)（2013年4月发布）
@@ -24,4 +26,4 @@
 ## Join us 为开源做贡献
 
 * 注册[七牛云储存](https://portal.qiniu.com/signup?code=3lafkpsz7yes1)，本站将获得流量奖励，供大家下载使用。
-* 加入开源项目 [https://coding.net/u/openwrtio/p/downloads/git](https://coding.net/u/openwrtio/p/downloads/git)，一起写代码吧。
+* 加入开源项目 [https://github.com/openwrtio](https://github.com/openwrtio)，一起写代码吧。
