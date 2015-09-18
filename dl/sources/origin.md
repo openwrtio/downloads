@@ -7,6 +7,7 @@ http://curl.haxx.se/download/curl-7.34.0.tar.bz2 | curl-7.34.0.tar.bz2 |
 http://curl.haxx.se/download/curl-7.36.0.tar.bz2 | curl-7.36.0.tar.bz2 |
 http://curl.haxx.se/download/curl-7.38.0.tar.bz2 | curl-7.38.0.tar.bz2 |
 http://curl.haxx.se/download/curl-7.43.0.tar.bz2 | curl-7.43.0.tar.bz2 |
+http://curl.haxx.se/download/curl-7.44.0.tar.bz2 | curl-7.44.0.tar.bz2 |
 http://thekelleys.org.uk/dnsmasq/dnsmasq-2.75.tar.xz | dnsmasq-2.75.tar.xz |
 http://pkgs.fedoraproject.org/repo/pkgs/flite/flite-1.3-release.tar.gz/ae0aca1cb7b4801f4372f3a75a9e52b5/flite-1.3-release.tar.gz | flite-1.3-release.tar.gz |
 https://launchpadlibrarian.net/172450987/gcc-linaro-4.8-2014.04.tar.xz | gcc-linaro-4.8-2014.04.tar.xz |
@@ -22,10 +23,13 @@ https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.10.28.tar.xz | linux-3.10.2
 https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.10.44.tar.xz | linux-3.10.44.tar.xz |
 https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.10.49.tar.xz | linux-3.10.49.tar.xz |
 https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.10.84.tar.xz | linux-3.10.84.tar.xz |
+https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.10.88.tar.xz | linux-3.10.88.tar.xz |
 https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.12.44.tar.xz | linux-3.12.44.tar.xz |
+https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.12.47.tar.xz | linux-3.12.47.tar.xz |
 https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.14.16.tar.xz | linux-3.14.16.tar.xz |
 https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.14.18.tar.xz | linux-3.14.18.tar.xz |
 https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.14.48.tar.xz | linux-3.14.48.tar.xz |
+https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.14.52.tar.xz | linux-3.14.52.tar.xz |
 https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.14.tar.xz | linux-3.18.14.tar.xz |
 https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.16.tar.xz | linux-3.18.16.tar.xz |
 https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.17.tar.xz | linux-3.18.17.tar.xz |
@@ -35,6 +39,7 @@ https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.20.tar.xz | linux-3.18.2
 https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.21.tar.xz | linux-3.18.21.tar.xz |
 https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.1.5.tar.xz | linux-4.1.5.tar.xz |
 https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.1.6.tar.xz | linux-4.1.6.tar.xz |
+https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.1.7.tar.xz | linux-4.1.7.tar.xz |
 https://tls.mbed.org/download/mbedtls-1.3.11-gpl.tgz | mbedtls-1.3.11-gpl.tgz |
 https://tls.mbed.org/download/mbedtls-2.0.0-gpl.tgz | mbedtls-2.0.0-gpl.tgz |
 http://www.multiprecision.org/mpc/download/mpc-0.9.tar.gz | mpc-0.9.tar.gz |
