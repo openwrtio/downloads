@@ -5,6 +5,7 @@ http://hiwifi-sdk.oss.aliyuncs.com/HC5761-ralink-sdk.tar.bz2 | HC5761-ralink-sdk
 http://hiwifi-sdk.oss.aliyuncs.com/HC5861-ralink-sdk.tar.bz2 | HC5861-ralink-sdk.tar.bz2 |
 https://code.hiwifi.com/wiki/hiwifi/sdk-howto | hc5761-20140619.tar.gz |
 https://code.hiwifi.com/wiki/hiwifi/sdk-howto | hc5761-r5104-i386.tar.gz |
+http://ur.ikcd.net/HC5761-sysupgrade-20150928-4c870d01.bin | 0.9015.1.10299s-HC5761-sysupgrade-20150928-4c870d01.bin |
 http://ur.ikcd.net/HC5861-sysupgrade-20150801-3c058db6.bin | 0.9013.1.9653s-HC5861-sysupgrade-20150801-3c058db6.bin |
 http://ur.ikcd.net/HC5761-sysupgrade-20150801-805354de.bin | 0.9013.1.9653s-HC5761-sysupgrade-20150801-805354de.bin
 http://ur.ikcd.net/HC5661-sysupgrade-20150801-f01b42d9.bin | 0.9013.1.9653s-HC5661-sysupgrade-20150801-f01b42d9.bin |
