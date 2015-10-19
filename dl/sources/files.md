@@ -633,7 +633,6 @@ libzip-0.10.1.tar.bz2| 597KiB|
 libzstream-2012-06-11-3b9748999aa3d81a5811eff1cc221266a2588e28.tar.gz| 20KiB|
 lighttpd-1.4.35.tar.xz| 544KiB|
 linux-2.6.36.tar.xz| 56MiB|
-linux-3.3.8.tar.bz2| 76MiB|
 linux-atm-2.5.2.tar.gz| 1.1MiB|
 linux-firmware-2014-03-16-f8c22c692bdee57a20b092e647464ff6176df3ed.tar.xz| 22MiB|
 linux-firmware-2014-06-04-7f388b4885cf64d6b7833612052d20d4197af96f.tar.bz2| 39MiB|
